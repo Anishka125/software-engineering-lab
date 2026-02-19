@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="split-container">
+
+    <div class="left-panel">
+        <h1>Digital Library</h1>
+        <p>
+            A smart platform to manage books, track borrowing,
+            and simplify library operations efficiently.
+        </p>
+    </div>
+
+    <div class="right-panel">
+        <div class="auth-card">
+
+            <h2>Welcome</h2>
+
+            <?php
+            if (isset($_GET['registered'])) {
+                echo "<p style='color:green;'>Registration Successful ✅</p>";
+            }
+            ?>
+
+            <a href="login.php" class="btn btn-primary">Login</a>
+            <a href="register.php" class="btn btn-secondary">Register</a>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
